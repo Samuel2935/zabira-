@@ -4,7 +4,7 @@ import React from "react";
 
 const Form: React.FC = () => {
   return (
-    <div className="min-h-screen flex flex-col justify-center px-4 sm:px-6">
+    <div className="h-auto flex flex-col  px-4 sm:px-6 flex-1 justify-center">
       {/* Form */}
       <form
         className="
