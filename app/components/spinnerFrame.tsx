@@ -1,19 +1,44 @@
 "use client";
 import React, { useEffect } from "react";
+import { useRouter } from "next/navigation";
+
+
 
 type LogoIconProps = {
   className?: string;
 };
 
+// "use client";
+
+// import React, { useEffect } from "react";
+// import { useRouter } from "next/navigation";
+
+// const LogoIcon: React.FC = () => {
+//   const router = useRouter();
+
+//   useEffect(() => {
+//     const timer = setTimeout(() => {
+//       router.push("/signUpWithEmailForm"); // navigate client-side
+//     }, 5000);
+ 
+
+
+ 
+
 const LogoIcon: React.FC<LogoIconProps> = ({ className }) => {
+ const router = useRouter();
+  
   useEffect(() => {
     const timer = setTimeout(() => {
       // Redirect after 5 seconds
-    //   window.location.href = "/signup";
+      router.push("/landingPage");
     }, 5000);
 
-    return () => clearTimeout(timer);
-  }, []);
+  
+     return () => clearTimeout(timer);
+  }, [router]);
+
+  console.log("LogoIcon mounted");
 
   return (
     <>

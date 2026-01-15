@@ -123,3 +123,11 @@
     @apply bg-background text-foreground;
   }
 }
+
+.btn {
+  background-color: #1A1A1A !important;
+  color: #FFFFFF !important;
+  border: 1px solid #E1E1E2 !important;
+  cursor: pointer !important;
+}
+
