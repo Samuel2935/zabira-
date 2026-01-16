@@ -98,7 +98,7 @@ const Form: React.FC = () => {
 
           {/* Terms */}
           <div className="flex items-start gap-2">
-            <input type="checkbox" className="mt-1 checked:text-[#0044EE]" />
+            <input type="checkbox" className="mt-1 accent-[#0044EE] cursor-pointer" />
             <p className="text-[#1A1A1A5C] text-[13px] sm:text-[14px] leading-snug">
               By clicking ‘Sign Up’, I agree to Zabira’s{" "}
               <span className="text-[#0044EE] cursor-pointer">Terms of Service</span> and{" "}

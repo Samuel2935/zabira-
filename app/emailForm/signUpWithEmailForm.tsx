@@ -33,6 +33,12 @@ const InputField: React.FC<InputFieldProps> = ({
     </div>
   </div>
 );
+/* ----------------------------- MAIN FORM ----------------------------- */ 
+
+const takeMeToGoogle = () => {
+  window.location.href = "/googleForm";
+}
+
 
 const Form: React.FC = () => {
   return (
@@ -44,13 +50,13 @@ const Form: React.FC = () => {
           alt="sidebar banner"
           width={420}
           height={700}
-          className="h-full w-[420px] object-cover"
+          className="h-full w-105 object-cover"
         />
       </div>
 
       {/* RIGHT COLUMN — FORM */}
-      <div className="flex flex-1 flex-col justify-center px-4 sm:px-6">
-        <form className="flex flex-col gap-4 h-auto max-w-110 mx-auto bg-white p-4 sm:p-6 rounded-md">
+      <div className="flex flex-1 flex-col justify-center px-4 sm:px-6 ">
+        <form className="flex flex-col gap-4  max-w-110 mx-auto bg-white p-4 sm:p-6 rounded-md">
           <p className="text-[#1A1A1A] font-bold text-[20px] sm:text-[24px] text-center">
             Create an Account in 2 minutes!
           </p>
@@ -78,9 +84,13 @@ const Form: React.FC = () => {
           />
 
           <div className="flex items-start gap-2">
-            <input type="checkbox" className="mt-1" />
+            <input
+              type="checkbox"
+              className="mt-1  accent-[#0044EE]
+              cursor-pointer"
+            />
             <p className="text-[#1A1A1A5C] text-[13px] sm:text-[14px]">
-              By clicking ‘Sign Up’, I agree to Zabira’s{" "}
+              By clicking ‘Sign Up’, I agree to Zabira’s
               <span className="text-[#0044EE] cursor-pointer">
                 Terms of Service
               </span>{" "}
@@ -102,7 +112,7 @@ const Form: React.FC = () => {
           </p>
 
           <div className="flex gap-2 justify-center sm:justify-start">
-            <Button className="w-[56px] sm:flex-1 sm:w-auto bg-white text-[#1A1A1A] border border-[#E1E1E2] flex items-center justify-center">
+            <Button onClick={takeMeToGoogle} className="w-14 sm:flex-1 sm:w-auto bg-white text-[#1A1A1A] border border-[#E1E1E2] flex items-center justify-center">
               <Image
                 src="/Google__G__Logo.svg"
                 width={20}
@@ -112,7 +122,7 @@ const Form: React.FC = () => {
               <span className="hidden sm:inline ml-2">Google</span>
             </Button>
 
-            <Button className="w-[56px] sm:flex-1 sm:w-auto bg-[#1A1A1A] text-white border border-[#E1E1E2] flex items-center justify-center">
+            <Button className="w-14 sm:flex-1 sm:w-auto bg-[#1A1A1A] text-white border border-[#E1E1E2] flex items-center justify-center">
               <Image src="/Icon L.svg" width={20} height={20} alt="apple" />
               <span className="hidden sm:inline ml-2">Apple</span>
             </Button>

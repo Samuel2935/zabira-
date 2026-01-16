@@ -1,5 +1,6 @@
 
-import Page from "./landingPage/page";
+// import Page from "./landingPage/page";
+import SpinnerFrame from "@/components/ui/spinnerFrame";
 
 
 
@@ -8,12 +9,12 @@ import Page from "./landingPage/page";
 
 export default function Home() {
   return (
-    <div className="flex bg-[#F5F5F5] ">
+    <div className="flex  ">
     {/* <Header/> */}
-     {/* <SpinnerFrame /> */}
+     <SpinnerFrame />
     {/* <SignUpPage /> */}
     {/* <SignUpWithEmailForm /> */}
-    <Page />
+    {/* <Page /> */}
     </div>
   );
 }

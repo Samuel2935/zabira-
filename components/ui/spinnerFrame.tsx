@@ -32,7 +32,7 @@ const LogoIcon: React.FC<LogoIconProps> = ({ className }) => {
     const timer = setTimeout(() => {
       // Redirect after 5 seconds
       router.push("/landingPage");
-    }, 5000);
+    }, 10000);
 
   
      return () => clearTimeout(timer);
