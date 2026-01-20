@@ -2,8 +2,6 @@
 import React, { useEffect } from "react";
 import { useRouter } from "next/navigation";
 
-
-
 type LogoIconProps = {
   className?: string;
 };
@@ -20,22 +18,17 @@ type LogoIconProps = {
 //     const timer = setTimeout(() => {
 //       router.push("/signUpWithEmailForm"); // navigate client-side
 //     }, 5000);
- 
-
-
- 
 
 const LogoIcon: React.FC<LogoIconProps> = ({ className }) => {
- const router = useRouter();
-  
+  const router = useRouter();
+
   useEffect(() => {
     const timer = setTimeout(() => {
       // Redirect after 5 seconds
       router.push("/landingPage");
     }, 10000);
 
-  
-     return () => clearTimeout(timer);
+    return () => clearTimeout(timer);
   }, [router]);
 
   console.log("LogoIcon mounted");
@@ -78,10 +71,7 @@ const LogoIcon: React.FC<LogoIconProps> = ({ className }) => {
         `}
       </style>
 
-       
       <div className="logo-wrapper">
-       
-        
         <svg
           viewBox="0 0 510 510"
           fill="none"

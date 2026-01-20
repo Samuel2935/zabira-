@@ -33,12 +33,7 @@ const InputField: React.FC<InputFieldProps> = ({
     </div>
   </div>
 );
-/* ----------------------------- MAIN FORM ----------------------------- */ 
-
-const takeMeToGoogle = () => {
-  window.location.href = "/googleForm";
-}
-
+/* ----------------------------- MAIN FORM ----------------------------- */
 
 const Form: React.FC = () => {
   return (
@@ -112,7 +107,7 @@ const Form: React.FC = () => {
           </p>
 
           <div className="flex gap-2 justify-center sm:justify-start">
-            <Button onClick={takeMeToGoogle} className="w-14 sm:flex-1 sm:w-auto bg-white text-[#1A1A1A] border border-[#E1E1E2] flex items-center justify-center">
+            <Button className="w-14 sm:flex-1 sm:w-auto bg-white text-[#1A1A1A] border border-[#E1E1E2] flex items-center justify-center">
               <Image
                 src="/Google__G__Logo.svg"
                 width={20}
