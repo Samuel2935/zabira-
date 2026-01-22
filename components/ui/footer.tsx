@@ -9,8 +9,8 @@ function Footer() {
           whitespace-nowrap
           font-semibold text-sm text-[#1A1A1A]
           px-4 py-2
-          w-full sm:w-[70%]
-          sm:absolute sm:bottom-1 sm:right-1
+          w-full sm:w-[65%]
+          sm:absolute sm:bottom-5 sm:right-1
         "
       >
         {/* LEFT */}

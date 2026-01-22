@@ -20,8 +20,9 @@ function Head() {
           sm:justify-end
           gap-2 sm:gap-4
           font-semibold text-sm text-[#1A1A1A]
-          bg-white rounded-xl
-          px-3 py-2
+          bg-[#FCFCFC] rounded-full
+          px-2 py-1
+          border border-[#E1E1E2]
         "
       >
         <div className="flex items-center gap-2">
@@ -29,7 +30,7 @@ function Head() {
           <Image src="/iconic.svg" alt="Check Rates" width={20} height={20} />
         </div>
 
-        <div className="h-5 w-px bg-gray-300" />
+        <div className="h-4 w-px bg-gray-300" />
 
         <div className="flex items-center gap-2">
           <p className="whitespace-nowrap">Get Help</p>
