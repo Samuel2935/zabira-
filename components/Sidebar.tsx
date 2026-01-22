@@ -3,7 +3,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { NAV_ITEMS } from "./nav.config";
+import { NAV_ITEMS } from "@/app/config/nav.config";
 
 export default function Sidebar() {
   const pathname = usePathname();
