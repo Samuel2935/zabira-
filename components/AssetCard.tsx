@@ -1,37 +1,46 @@
 "use client";
 
-import { ArrowRight } from "lucide-react";
-
 import Image from "next/image";
+import { Asset } from "@/app/config/asset";
 
-export default function AssetCard() {
+type Props = {
+  asset: Asset;
+};
+
+export default function AssetCard({ asset }: Props) {
+  const isGain = asset.changePercent >= 0;
+
   return (
-    <div className="w-full max-w-full rounded-md bg-white p-2">
-      <div className=" p-4 rounded-xl mb-6">
-        <div className="flex items-center justify-between mb-4 gap-2">
-          <p className="text-[16px] text-gray-500 flex items-center gap-2">
-            <Image
-              src="/lighting.svg"
-              alt="Trading Icon"
-              width={20}
-              height={20}
-            />
-            Top traded assets this week
-          </p>
+    <div className=" h-30.25 w-34 rounded-md bg-[#F4F4F5] p-4  gap-3">
 
-          <button className=" flex gap-2 text-white text-sm bg-black px-3 py-1 rounded-full hover:bg-gray-800">
-            Trade Now
-            <ArrowRight size={16} />
-          </button>
+      <Image
+        src={asset.logoUrl}
+        width={20}
+        height={20}
+        alt={asset.name}
+        className="rounded-full"
+      />
+
+      <div className="flex flex-col leading-tight">
+        <div className="flex items-center gap-1">
+          <p className="text-sm font-semibold">{asset.name}</p>
+          <span className="text-xs text-gray-400">
+            ({asset.ticker})
+          </span>
         </div>
-      </div>
-
-      <div className="flex gap-3 justify-end">
-        <p className="text-[16px] text-[#1A1A1A] font-semibold flex items-center gap-2">
-          <Image src="/reward.svg" alt="Trading Icon" width={20} height={20} />
-          Earn Rewards
-          <ArrowRight size={16} />
-        </p>
+          <span
+          className={`text-xs font-semibold flex items-center gap-1 ${
+            isGain ? "text-green-600" : "text-red-500"
+          }`}
+        >
+          {isGain ? "+" : ""}
+          {asset.changePercent}%
+          {isGain ? (
+            <Image src="/trend-up.svg" alt="Trending Up" width={12} height={12} />
+          ) : (
+            <Image src="/trend-down.svg" alt="Trending Down" width={12} height={12} />
+          )}
+        </span>
       </div>
     </div>
   );

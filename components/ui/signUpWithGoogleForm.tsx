@@ -49,7 +49,7 @@ type SocialButtonProps = {
 const SocialButton: React.FC<SocialButtonProps> = ({ icon, label, isDark }) => (
   <Button
     className={`
-      w-[56px] sm:flex-1 sm:w-auto
+      w-14 sm:flex-1 sm:w-auto
       ${isDark ? "bg-[#1A1A1A] text-white" : "bg-white text-[#1A1A1A]"}
       border border-[#E1E1E2] flex items-center justify-center
     `}
@@ -70,14 +70,14 @@ const Form: React.FC = () => {
           alt="sidebar banner"
           width={420}
           height={1000}
-          className="h-full w-[420px] object-cover"
+          className="h-full w-105 object-cover"
           priority
         />
       </aside>
 
       {/* RIGHT — FORM */}
       <main className="flex flex-1 flex-col justify-center px-4 sm:px-6 min-h-screen">
-        <form className="flex flex-col gap-4 w-full max-w-[500px] mx-auto bg-white p-4 sm:p-6 rounded-md">
+        <form className="flex flex-col gap-4 w-full max-w-125 mx-auto bg-white p-4 sm:p-6 rounded-md">
           {/* Header */}
           <p className="text-[#1A1A1A] font-bold text-[20px] sm:text-[24px] text-center">
             Create an Account in 2 minutes!

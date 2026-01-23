@@ -27,7 +27,7 @@ export default function BalanceCard({
   const currency = CURRENCIES[currencyCode as keyof typeof CURRENCIES];
 
   return (
-    <div className="w-full max-w-md rounded-md bg-white p-2">
+    <div className="w-117 h-59.5 gap-6 rounded-md bg-white p-2">
       <div className="bg-[#EBF0FF] p-4 rounded-xl mb-6">
         <div className="flex items-center mb-4 gap-2">
           <p className="text-[16px] text-gray-500">Total Balance</p>
