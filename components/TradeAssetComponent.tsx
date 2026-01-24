@@ -20,7 +20,7 @@ export default function TradeAssetCardComponent() {
           Top traded assets this week
         </p>
 
-        <button className="flex items-center gap-2 text-sm bg-black text-white px-4 py-1.5 rounded-full hover:bg-gray-800">
+        <button className="flex items-center gap-2 text-sm bg-black text-white px-4 py-1.5 rounded-full cursor-pointer font-Geista border border-black">
           Trade Now
           <ArrowRight size={16} />
         </button>
