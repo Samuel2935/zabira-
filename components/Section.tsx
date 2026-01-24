@@ -1,18 +1,16 @@
 import Image from "next/image";
-import React from "react";
-import { Button } from "./ui/button";
 import { ArrowRight } from "lucide-react";
 
 function Section() {
   return (
-    <div className="flex justify-between w-[1208px] h-[88px] bg-[#A3D4FF] p-4 rounded-md items-center gap-6 mt-4 mx-auto">
+    <div className="flex justify-between w-302 h-22 bg-[#A3D4FF] p-4 rounded-md items-center gap-6 mt-4 mx-auto">
       <div className="section flex items-center gap-4">
         <Image
           src="/ProgressRadial.svg"
           width={30}
           height={30}
           alt="Banner Frame"
-          className=" w-[56px] h-[56px] ml-4"
+          className=" w-14 h-14] ml-4"
         />
         <div className="diva">
           <h4 className="text-[#00298F]">You’re almost done!</h4>
@@ -22,7 +20,7 @@ function Section() {
         </div>
       </div>
       <div className="ps">
-        <button className="flex justify-center w-[205px] h-[36px] gap-2 rounded-sm bg-[#1A1A1A] text-[#ffff] px-3 py-2 cursor-pointer text-sm font-Geista border border-[#1A1A1A]">
+        <button className="flex justify-center w-51.25 h-9 gap-2 rounded-sm bg-[#1A1A1A] text-[#ffff] px-3 py-2 cursor-pointer text-sm font-Geista border border-[#1A1A1A]">
           <span className="ml-2">Complete Profile Setup</span>
           <ArrowRight size={16} />
         </button>

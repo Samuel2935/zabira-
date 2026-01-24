@@ -12,21 +12,19 @@ export default function Sidebar() {
   return (
     <aside className="w-[256px] h-[917.81px] bg-white flex flex-col px-4 py-6">
       {/* Logo */}
- <div className="flex items-center gap-2 mb-10">
-  <Image
-    src="/Zabira Logo Icon.svg"
-    alt="Zabira logo"
-    width={20}
-    height={20}
-    priority
-  />
-  <h2 className="text-xl font-bold">Zabira</h2>
-</div>
-
+      <div className="flex items-center gap-2 mb-10">
+        <Image
+          src="/Zabira Logo Icon.svg"
+          alt="Zabira logo"
+          width={20}
+          height={20}
+          priority
+        />
+        <h2 className="text-xl font-bold">Zabira</h2>
+      </div>
 
       {/* Navigation */}
       <nav className="flex flex-col gap-3 w-56 h-83.5">
-        
         {NAV_ITEMS.map(({ label, href, icon: Icon }) => {
           const isActive = pathname === href || pathname.startsWith(href + "/");
 
@@ -49,25 +47,27 @@ export default function Sidebar() {
         })}
       </nav>
       <Image
-        src="/Banner.png" 
+        src="/Banner.png"
         alt="sidebar banner"
         width={420}
         height={1000}
         className=" h-40 w-56 object-cover rounded-sm mt-2"
         priority
-      />  
-            <Image
-        src="/Frame2.png" 
+      />
+      <Image
+        src="/Frame2.png"
         alt="sidebar banner"
         width={420}
         height={1000}
         className=" h-[208.81px] w-56 object-cover rounded-sm"
         priority
-      />  
-     <div className="last w-56 h-10.5 gap-2 px-6">
-       <h4 className="text-[#1A1A1AB2] font-semibold">Zabira Technologies</h4>
-      <p className="text-[#1A1A1A5C] text-[14px]">© 2027 All Rights Reserved</p>
-     </div>
+      />
+      <div className="last w-56 h-10.5 gap-2 px-6">
+        <h4 className="text-[#1A1A1AB2] font-semibold">Zabira Technologies</h4>
+        <p className="text-[#1A1A1A5C] text-[14px]">
+          © 2027 All Rights Reserved
+        </p>
+      </div>
     </aside>
   );
 }

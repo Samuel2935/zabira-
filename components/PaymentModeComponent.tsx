@@ -15,7 +15,7 @@ export default function PaymentModeComponent() {
           height={20}
           className="inline-block mr-2"
         />
-        <p className=" text-[#1A1A1A]">Select a payment method</p>
+        <p className=" text-[#1A1A1A]">Start Making Payments</p>
       </div>
 
       <div className="flex gap-4 justify-center overflow-hidden">
