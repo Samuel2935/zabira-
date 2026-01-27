@@ -35,13 +35,6 @@ export const ASSETS: Asset[] = [
     logoUrl: "/Amazon.svg",
     changePercent: -2.3,
   },
-    {
-    id: "usdt",
-    name: "Tether",
-    ticker: "USDT",
-    logoUrl: "/Tether.svg",
-    changePercent: 0.01,
-  },
   {
     id: "spot",
     name: "Spotify",
