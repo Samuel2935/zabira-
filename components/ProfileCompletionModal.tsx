@@ -2,13 +2,14 @@
 
 import { X, ChevronRight } from "lucide-react";
 import Image from "next/image";
+import { createPortal } from "react-dom";
 
 type ProfileTask = {
   id: string;
   title: string;
   description: string;
   completed: boolean;
-  icon: string; // path to svg in public
+  icon: string;
   action: () => void;
 };
 
@@ -18,7 +19,7 @@ type Props = {
 };
 
 export default function ProfileCompletionModal({ isOpen, onClose }: Props) {
-  if (!isOpen) return null;
+  if (!isOpen || typeof document === "undefined") return null;
 
   const tasks: ProfileTask[] = [
     {
@@ -51,28 +52,28 @@ export default function ProfileCompletionModal({ isOpen, onClose }: Props) {
       description: "Required to unlock higher limits",
       completed: false,
       icon: "/personicon.svg",
-      action: () => console.log("Start person"),
+      action: () => console.log("Start personal info"),
     },
     {
       id: "2fa",
       title: "Enable 2FA",
-      description: "Required to unlock higher limits",
+      description: "Secure your account",
       completed: false,
       icon: "/two-factor.svg",
-      action: () => console.log("Start 2fa"),
+      action: () => console.log("Enable 2FA"),
     },
     {
       id: "trx",
       title: "Make your first transaction",
-      description: "Withdraw funds instantly",
+      description: "Start trading instantly",
       completed: false,
       icon: "/firstrx.svg",
-      action: () => console.log("Add bank"),
+      action: () => console.log("Make transaction"),
     },
   ];
 
-  return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 ">
+  return createPortal(
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60">
       <div className="relative w-full max-w-md">
         {/* Close button */}
         <button
@@ -120,7 +121,6 @@ export default function ProfileCompletionModal({ isOpen, onClose }: Props) {
                   `}
                 >
                   <div className="flex items-start gap-3">
-                    {/* Left icon */}
                     <div
                       className={`
                         flex h-9 w-9 items-center justify-center rounded-full
@@ -143,7 +143,6 @@ export default function ProfileCompletionModal({ isOpen, onClose }: Props) {
                     </div>
                   </div>
 
-                  {/* Right icon */}
                   {task.completed ? (
                     <Image
                       src="/Icon.svg"
@@ -160,6 +159,7 @@ export default function ProfileCompletionModal({ isOpen, onClose }: Props) {
           </div>
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 }
