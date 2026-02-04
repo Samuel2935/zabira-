@@ -13,6 +13,7 @@ export default function SignUpPageLayout({
       <div className="flex flex-col flex-1">
         <Head/>
         <main className="p-6">{children}</main>
+        
         <Footer/>
       </div>
     </div>

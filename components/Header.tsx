@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <header className="flex items-center justify-between border-b bg-white px-6 py-5">
       {/* LEFT: Greeting */}
-      <div className="flex flex-col gap-1">
+      <div className="hidden md:flex flex-col gap-1">
         <h1 className="text-base font-semibold">
           Hi, Samuel <span aria-hidden>👋</span>
         </h1>

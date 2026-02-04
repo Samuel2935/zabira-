@@ -7,7 +7,7 @@ import { ASSETS } from "@/app/config/asset";
 
 export default function TradeAssetCardComponent() {
   return (
-    <div className="w-167 h-59.5 justify-between  bg-white p-2 rounded-xl">
+    <div className="w-full h-auto justify-between  bg-white p-2 rounded-xl">
       {/* Header */}
       <div className="flex items-center justify-between mb-4">
         <p className="text-sm text-gray-500 flex items-center gap-2">

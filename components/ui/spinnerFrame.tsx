@@ -25,7 +25,7 @@ const LogoIcon: React.FC<LogoIconProps> = ({ className }) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       // Redirect after 5 seconds
-      router.push("/signup");
+      router.push("/dashboard");
     }, 10000);
 
     return () => clearTimeout(timer);

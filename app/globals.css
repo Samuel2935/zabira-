@@ -131,18 +131,3 @@
   cursor: pointer !important;
 }
 
-
-/* 
-@keyframes scroll-x {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-} */
-
-/* .animate-scroll-x {
-  animation: scroll-x 25s linear infinite;
-}
- */

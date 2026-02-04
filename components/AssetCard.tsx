@@ -11,7 +11,7 @@ export default function AssetCard({ asset }: Props) {
   const isGain = asset.changePercent >= 0;
 
   return (
-    <div className=" h-30.25 w-34 rounded-md bg-[#F4F4F5] p-4  gap-3">
+    <div className=" h-30 w-34 rounded-md bg-[#F4F4F5] p-4  gap-3">
       <Image
         src={asset.logoUrl}
         width={20}

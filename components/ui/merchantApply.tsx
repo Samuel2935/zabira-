@@ -5,7 +5,7 @@ export default function MerchantApply() {
   return (
     <section
       className="
-        relative flex w-142 h-50.5
+        relative flex w-full h-auto mt-5 md:mt-0 items-center
         rounded-xl
         bg-gradient-to-r from-[#502DFF] to-[#00E8D1]
         px-[23.51px] pt-[23.51px] gap-[29.39px]

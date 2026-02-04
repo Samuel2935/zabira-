@@ -6,23 +6,27 @@ import MerchantInvite from "./ui/merchantInvite";
 
 export default function MerchantComponent() {
   return (
-    <div className="mt-4 bg-white p-6 w-302 h-74 gap-6 rounded-md mx-auto">
-      <div className="w-56.25 h-5.5 gap-2  mb-4 flex">
+    <div className="mt-4 w-full rounded-md bg-white px-4 pb-4 md:p-6">
+      {/* Header (desktop only) */}
+      <div className="hidden md:flex items-center gap-2 mb-4">
         <Image
           src="/lighting.svg"
-          alt="lightings"
+          alt="Lightning icon"
           width={20}
           height={20}
-          className="inline-block mr-2"
         />
-        <p className=" text-[#1A1A1A]">Do more on Zabira!</p>
+        <p className="font-medium text-[#1A1A1A]">Do more on Zabira!</p>
       </div>
-      
-      <div className="flex gap-4">
-          <MerchantApply/>
-        <MerchantInvite/>
+
+      {/* Actions */}
+      <div className="flex flex-col md:flex-row gap-4">
+        <div className="md:flex-1">
+          <MerchantApply />
+        </div>
+        <div className="md:flex-1">
+          <MerchantInvite />
+        </div>
       </div>
-     
     </div>
   );
 }

@@ -10,7 +10,7 @@ export default function Sidebar() {
   const pathname = usePathname();
 
   return (
-    <aside className="w-[256px] h-[917.81px] bg-white flex flex-col px-4 py-6">
+    <aside className="hidden md:flex w-full h-220 rounded-b-sm bg-white flex-col px-4 py-6">
       {/* Logo */}
       <div className="flex items-center gap-2 mb-10">
         <Image

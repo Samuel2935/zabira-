@@ -23,7 +23,7 @@ function Section() {
           </p>
         </div>
       </div>
-      <div className="ps">
+      <div className="hidden md:flex">
         <button
           onClick={() => setOpen(true)}
           className="flex justify-center w-51.25 h-9 gap-2 rounded-sm bg-[#1A1A1A] text-[#ffff] px-3 py-2 cursor-pointer text-sm font-Geista border border-[#1A1A1A]"

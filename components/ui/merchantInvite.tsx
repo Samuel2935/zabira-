@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function MerchantInvite() {
   return (
-    <section className="w-142 h-50.5 rounded-xl overflow-hidden text-white">
+    <section className="w-full h-auto rounded-xl overflow-hidden text-white mt-5 md:mt-0">
       {/* Header */}
       <div className="flex items-center justify-between bg-[#7099FF] px-6 py-4">
         <div className="flex gap-1 justify-between">
