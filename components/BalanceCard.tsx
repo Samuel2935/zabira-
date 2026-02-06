@@ -27,7 +27,7 @@ export default function BalanceCard({
   const currency = CURRENCIES[currencyCode as keyof typeof CURRENCIES];
 
   return (
-    <div className="w-full h-auto gap-6 rounded-md bg-white p-2">
+    <div className="w-full md:w-[40%] min-w-0 h-auto rounded-md p-2">
       <div className="bg-[#EBF0FF] p-4 rounded-xl mb-6">
         <div className="flex items-center mb-4 gap-2">
           <p className="text-[16px] text-gray-500">Total Balance</p>
@@ -52,7 +52,7 @@ export default function BalanceCard({
           }
         </h2>
 
-        <div className="flex justify-center items-center gap-3 py-1 bg-[#D6E2FF] rounded-md">
+        <div className="flex justify-center items-center gap-2 py-1  bg-[#D6E2FF] rounded-md">
           {Object.values(CURRENCIES).map((c) => {
             const isActive = c.code === currencyCode;
 
@@ -66,8 +66,8 @@ export default function BalanceCard({
                 <span className="text-sm text-gray-500">{c.code}</span>
                 <Image
                   src={c.flagUrl}
-                  width={30}
-                  height={30}
+                  width={20}
+                  height={20}
                   alt="flag"
                   className="rounded-full h-5 w-5"
                 />

@@ -17,7 +17,7 @@ export default function MerchantInvite() {
       </div>
 
       {/* Body */}
-      <div className="bg-[#ebf0f4] px-6 py-5 flex flex-col gap-3">
+      <div className="bg-[#ebf0f4] px-6 py-5 h-34 pt-2 gap-2 p-4 flex flex-col">
         <p className=" text-black">
           Invite 10 people and get 100 points to use in amazing rewards! T&C
           Apply.

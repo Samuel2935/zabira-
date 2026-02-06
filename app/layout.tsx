@@ -17,6 +17,10 @@ export const metadata: Metadata = {
   icons: "/Zabira Logo Icon.svg",
   description: "Bank yourself to success",
 };
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
 
 export default function RootLayout({
   children,

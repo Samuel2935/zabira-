@@ -21,13 +21,13 @@ export const PAYMENT_MODES: PaymentMode[] = [
   },
   {
     id: "bills",
-    name: "Pay Bills",
+    name: "Bills",
     description: "Airtime, data, cable, betting, electricity.",
     logoUrl: "/bill.svg",
   },
   {
     id: "link",
-    name: "Pay Link",
+    name: "Link",
     description: "Get paid in seconds with payment links.",
     logoUrl: "/link.svg",
   },

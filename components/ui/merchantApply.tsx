@@ -18,7 +18,7 @@ export default function MerchantApply() {
       </div>
 
       {/* Right Content */}
-      <div className="text-left w-[369.65px] h-[140.99px] pt-2 gap-[11.75px]">
+      <div className="text-left w-[369.65px] h-auto pt-2 gap-2 p-4 flex flex-col">
         <p className="font-bold text-white">Become a Merchant</p>
         <p className="text-white">
           Get access to APIs and assets for your merchant profile
